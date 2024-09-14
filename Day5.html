@@ -8,22 +8,36 @@
   <body>
     <script>
       //practice question
-      // number is multiple of 5 or not
-      //   let num = prompt("enter a number");
-      //   if (num % 5 == 0) {
-      //     console.log("It i a multiple of 5");
-      //   } else {
-      //     console.log("It is not multiple of 5");
-      //   }
+      // 01 number is multiple of 5 or not
+      let num = prompt("enter a number");
+      if (num % 5 == 0) {
+        console.log("It i a multiple of 5");
+      } else {
+        console.log("It is not multiple of 5");
+      }
 
-      //Grades according to their scores
+      //02 Grades according to their scores
 
       let grades = prompt("ENter a Score");
       if (grades >= 89 && grades <= 100) {
         console.log("YOu got A");
+      } else if (grades >= 70 && grades <= 89) {
+        console.log("You got B");
       } else {
         console.log("You are fail");
       }
+
+      //way2
+      let grade = 75;
+      let score;
+      if (grade >= 89 && grade <= 100) {
+        score = "A";
+      } else if (grade >= 70 && grade <= 89) {
+        score = " B";
+      } else {
+        console.log("You are fail");
+      }
+      console.log(score);
     </script>
   </body>
 </html>
