@@ -11,10 +11,15 @@
       //  we use for -of loop for strings and arrays
       //  no need initilaization updation and end point
       let str = "Manisha";
-      for (let i of str) {
-        console.log("i=", i);
+      // for (let i of str) {
+      //   console.log("i=", i);
+      // }
+      let size = 0;
+      for (let val of str) {
+        console.log("i=", val);
+        size++;
       }
-
+      console.log("string size =", size);
       // for-in loop
     </script>
   </body>
